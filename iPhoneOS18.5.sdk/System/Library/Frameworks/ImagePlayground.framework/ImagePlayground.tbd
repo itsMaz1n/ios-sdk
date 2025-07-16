@@ -1,0 +1,35 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/ImagePlayground.framework/ImagePlayground
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ImagePlaygroundVersionNumber,
+                            _ImagePlaygroundVersionString ]
+    objc-classes:         [ GPDrawOnImageRecipe, GPExportablePhotoAsset,
+                            GPGenerationRecipeData, GPImageEditionViewController,
+                            GPImagePickerViewController, GPImageXPCWrapper,
+                            GPPromptElement, GPRecipe,
+                            _TtC15ImagePlayground22GPEXHostViewController,
+                            _TtC15ImagePlayground29ImagePlaygroundViewController,
+                            _TtCV15ImagePlayground21_AppExtensionHostView15HostCoordinator ]
+    objc-ivars:           [ GPImageEditionViewController._generationViewController,
+                            GPImageEditionViewController.delegate,
+                            GPImageEditionViewController.generatedAssets,
+                            GPImageEditionViewController.isLoadingRecipe,
+                            GPPromptElement._drawing, GPPromptElement._image,
+                            GPPromptElement._isPersonHandle,
+                            GPPromptElement._isSuggestableText,
+                            GPPromptElement._isTitle,
+                            GPPromptElement._needsConceptsExtraction,
+                            GPPromptElement._needsSuggestableConceptsExtraction,
+                            GPPromptElement._pixelBuffer, GPPromptElement._text,
+                            GPPromptElement._title, GPRecipe._additionalMetadata,
+                            GPRecipe._drawOnImageRecipe,
+                            GPRecipe._promptElements, GPRecipe._sourceImage,
+                            GPRecipe._sourceImageIsSketch ]
+...

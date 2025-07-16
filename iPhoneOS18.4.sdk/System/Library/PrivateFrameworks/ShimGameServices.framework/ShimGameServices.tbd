@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ShimGameServices.framework/ShimGameServices
+current-version:       819.4.46
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ _TtC16ShimGameServicesP33_BB4D3006578329CF5C2F6C1B26EE34E428GameServiceDelegateReference ]
+...

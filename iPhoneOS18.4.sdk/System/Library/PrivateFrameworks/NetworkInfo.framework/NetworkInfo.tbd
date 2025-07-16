@@ -1,0 +1,50 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/NetworkInfo.framework/NetworkInfo
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    objc-classes:         [ HostResolver, ICMPPingProbe, NetworkInfoAssessment,
+                            NetworkInfoConfiguration, NetworkInfoResults,
+                            PacketCaptureur, TestProbe,
+                            _TtC11NetworkInfo13SCDNSSettings,
+                            _TtC11NetworkInfo21NetworkInfoPingResult,
+                            _TtC11NetworkInfo27NetworkInfoDNSConfiguration,
+                            _TtC11NetworkInfo29NetworkInfoURLRetrievalResult,
+                            _TtC11NetworkInfo30NetworkInfoSystemConfiguration ]
+    objc-ivars:           [ HostResolver.queue, ICMPPingProbe._burstCount,
+                            ICMPPingProbe._completionHandler,
+                            ICMPPingProbe._currentBurst, ICMPPingProbe._delegate,
+                            ICMPPingProbe._failedCount, ICMPPingProbe._host,
+                            ICMPPingProbe._hostAddressData,
+                            ICMPPingProbe._hostAddressIsIPv6,
+                            ICMPPingProbe._hostName, ICMPPingProbe._identifier,
+                            ICMPPingProbe._interBurstInterval,
+                            ICMPPingProbe._interPingInterval,
+                            ICMPPingProbe._interfaceIndex,
+                            ICMPPingProbe._ipAddress,
+                            ICMPPingProbe._nextSequenceNumber,
+                            ICMPPingProbe._payloadSize,
+                            ICMPPingProbe._percentComplete,
+                            ICMPPingProbe._pingCount, ICMPPingProbe._pingRunLoop,
+                            ICMPPingProbe._pingRunLoopReady,
+                            ICMPPingProbe._pingThread, ICMPPingProbe._pings,
+                            ICMPPingProbe._rls, ICMPPingProbe._socket,
+                            ICMPPingProbe._successCount,
+                            ICMPPingProbe.burstTimer, ICMPPingProbe.pingTimer,
+                            ICMPPingProbe.stopTestOnFirstSuccess,
+                            ICMPPingProbe.timeoutTimer,
+                            PacketCaptureur._delegate,
+                            PacketCaptureur.netDiagConnQueue,
+                            PacketCaptureur.netDiagMsgQueue,
+                            PacketCaptureur.netDiagNotificationConnection,
+                            PacketCaptureur.netDiagNotificationListener,
+                            PacketCaptureur.netDiagServiceConnection,
+                            TestProbe._diagSessionUUID, TestProbe._periodicTimer,
+                            TestProbe._probeOutputFilePaths, TestProbe._queue,
+                            TestProbe._running, TestProbe._status, TestProbe._uuid ]
+...

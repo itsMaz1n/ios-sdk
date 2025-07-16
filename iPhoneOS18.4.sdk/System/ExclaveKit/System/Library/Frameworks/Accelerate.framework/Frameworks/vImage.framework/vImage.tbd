@@ -1,0 +1,45 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/vImage
+current-version:       611.100.8
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _vImageAffineWarpD_ARGB8888,
+                            _vImageAffineWarpD_Planar16F,
+                            _vImageAffineWarpD_Planar8,
+                            _vImageAffineWarpD_PlanarF,
+                            _vImageAffineWarp_ARGB8888,
+                            _vImageAffineWarp_Planar16F,
+                            _vImageAffineWarp_Planar8, _vImageAffineWarp_PlanarF,
+                            _vImageBufferFill_ARGB8888,
+                            _vImageConvert_ARGB8888ToXRGB2101010,
+                            _vImageConvert_Planar8toPlanar16F, _vImageCopyBuffer,
+                            _vImageExtractChannel_ARGB8888,
+                            _vImageGetPerspectiveWarp,
+                            _vImageHorizontalShearD_ARGB8888,
+                            _vImageHorizontalShearD_Planar16F,
+                            _vImageHorizontalShearD_Planar8,
+                            _vImageHorizontalShearD_PlanarF,
+                            _vImageHorizontalShear_Planar16F,
+                            _vImageHorizontalShear_Planar8,
+                            _vImageMotionDetectByRegion4x4Grid10bitPackedNeon,
+                            _vImageNewResamplingFilterForFunctionUsingBuffer,
+                            _vImageOverwriteChannelsWithScalar_Planar16S,
+                            _vImageOverwriteChannelsWithScalar_Planar16U,
+                            _vImagePerspectiveWarp_ARGB8888,
+                            _vImagePerspectiveWarp_Planar16F,
+                            _vImagePerspectiveWarp_Planar8,
+                            _vImageRotate90_ARGB8888, _vImageRotate90_Planar16F,
+                            _vImageRotate90_Planar16U, _vImageRotate90_Planar8,
+                            _vImageRotate90_PlanarF, _vImageRotate_ARGB8888,
+                            _vImageScale_Planar16F, _vImageScale_Planar8,
+                            _vImageVerticalShearD_ARGB8888,
+                            _vImageVerticalShearD_Planar16F,
+                            _vImageVerticalShearD_Planar8,
+                            _vImageVerticalShearD_PlanarF,
+                            _vImageVerticalShear_Planar16F,
+                            _vImageVerticalShear_Planar8 ]
+...

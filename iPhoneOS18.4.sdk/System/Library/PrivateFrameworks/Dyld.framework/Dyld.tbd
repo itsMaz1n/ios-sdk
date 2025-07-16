@@ -1,0 +1,17 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Dyld.framework/Dyld
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ __dyld_legacy_introspection_vtable,
+                            __dyld_process_info_for_each_aot_image,
+                            _unwrapCompactInfo ]
+    objc-classes:         [ _DYAOTImage, _DYEnvironment, _DYEventHandlerToken,
+                            _DYImage, _DYProcess, _DYSegment, _DYSharedCache,
+                            _DYSnapshot, _DYSubCache ]
+...

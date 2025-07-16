@@ -1,0 +1,18 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SiriLocalization.framework/SiriLocalization
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SLInitLogger, _SLLogContext,
+                            _SiriLocalizationVersionNumber,
+                            _SiriLocalizationVersionString,
+                            _kSLAdditionalSiriSessionLanguages,
+                            _kSLAssistantBackedUpDomain, _kSLDefaultLanguageCode,
+                            _kSLErrorDomain, _kSLLogContext ]
+    objc-classes:         [ SFFeatureFlags, SFPlatform, SLLoader, SLPreferences ]
+...

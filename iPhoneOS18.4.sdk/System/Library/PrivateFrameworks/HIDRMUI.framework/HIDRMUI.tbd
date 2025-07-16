@@ -1,0 +1,61 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/HIDRMUI.framework/HIDRMUI
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _HIDRMUIErrorDomain, _HIDRMUIErrorStringFromCode,
+                            _HIDRMUIVersionNumber, _HIDRMUIVersionString,
+                            _IOUserNotificationErrorDomain ]
+    objc-classes:         [ AuthRequestWrapper, HIDRMUIUserAuthorizationManager,
+                            HIDRMUIUserAuthorizationRequest, IOThread,
+                            IOUserNotification, IOUserNotificationButton,
+                            IOUserNotificationOption ]
+    objc-ivars:           [ AuthRequestWrapper._completionHandler,
+                            AuthRequestWrapper._pairingCodeDigits,
+                            AuthRequestWrapper._pairingCodeDigitsEntered,
+                            AuthRequestWrapper._pairingFailureCount,
+                            AuthRequestWrapper._pairingStatus,
+                            AuthRequestWrapper._userNotification,
+                            HIDRMUIUserAuthorizationManager._authRequests,
+                            HIDRMUIUserAuthorizationManager._completionQueue,
+                            HIDRMUIUserAuthorizationRequest._deviceName,
+                            HIDRMUIUserAuthorizationRequest._requiresPairing,
+                            IOUserNotification._buttonsMutable,
+                            IOUserNotification._extensionIdentifier,
+                            IOUserNotification._extensionItems,
+                            IOUserNotification._header,
+                            IOUserNotification._iconURL,
+                            IOUserNotification._lockScreenHeader,
+                            IOUserNotification._lockScreenMessage,
+                            IOUserNotification._message,
+                            IOUserNotification._noDefaultButton,
+                            IOUserNotification._notificationCancelled,
+                            IOUserNotification._notificationDismissed,
+                            IOUserNotification._notificationLevel,
+                            IOUserNotification._optionsMutable,
+                            IOUserNotification._queue,
+                            IOUserNotification._responseHandler,
+                            IOUserNotification._responseReceived,
+                            IOUserNotification._shouldAllowLockScreenDismissal,
+                            IOUserNotification._shouldDismissOnLock,
+                            IOUserNotification._shouldDismissOnUnlock,
+                            IOUserNotification._shouldDisplayOnTop,
+                            IOUserNotification._shouldHideOnMirroredDisplay,
+                            IOUserNotification._shouldIgnoreQuietMode,
+                            IOUserNotification._shouldPresentViaSystemAperture,
+                            IOUserNotification._systemSoundID,
+                            IOUserNotification._thread,
+                            IOUserNotification._timeout,
+                            IOUserNotification._updateCount,
+                            IOUserNotification._useRadioOptions,
+                            IOUserNotification._visible,
+                            IOUserNotificationButton._selected,
+                            IOUserNotificationButton._title,
+                            IOUserNotificationOption._selected,
+                            IOUserNotificationOption._title ]
+...

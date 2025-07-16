@@ -1,0 +1,56 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/Frameworks/TransitKit.framework/TransitKit
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s10TransitKit0A10ConnectionC4path18connectImmediatelyACSS_SbtcfC,
+                            _$s10TransitKit0A10ConnectionC4path18connectImmediatelyACSS_SbtcfCTq,
+                            _$s10TransitKit0A10ConnectionC4path18connectImmediatelyACSS_Sbtcfc,
+                            _$s10TransitKit0A10ConnectionC4send10contentsOfyx_tSlRzs5UInt8V7ElementRtzlF,
+                            _$s10TransitKit0A10ConnectionC4send10contentsOfyx_tSlRzs5UInt8V7ElementRtzlFTq,
+                            _$s10TransitKit0A10ConnectionC4sendyySays5UInt8VGF,
+                            _$s10TransitKit0A10ConnectionC4sendyySays5UInt8VGFTq,
+                            _$s10TransitKit0A10ConnectionC7receiveSays5UInt8VGyF,
+                            _$s10TransitKit0A10ConnectionC7receiveSays5UInt8VGyFTq,
+                            _$s10TransitKit0A10ConnectionC8callOnce33_317329DCF917F2BBFBBB1BFFC7CAD167LLAA04CallE0AELLCvpfi,
+                            _$s10TransitKit0A10ConnectionC9connectedSbvpfi,
+                            _$s10TransitKit0A10ConnectionCAA0C0AAMc,
+                            _$s10TransitKit0A10ConnectionCAA0C0AAWP,
+                            _$s10TransitKit0A10ConnectionCMa,
+                            _$s10TransitKit0A10ConnectionCMm,
+                            _$s10TransitKit0A10ConnectionCMn,
+                            _$s10TransitKit0A10ConnectionCN,
+                            _$s10TransitKit0A10ConnectionCfD,
+                            _$s10TransitKit0A10ConnectionCfd,
+                            _$s10TransitKit0A4CoreO0A7MessageO11descriptionSSvg,
+                            _$s10TransitKit0A4CoreO0A7MessageO11descriptionSSvpMV,
+                            _$s10TransitKit0A4CoreO0A7MessageO21__derived_enum_equalsySbAE_AEtFZ,
+                            _$s10TransitKit0A4CoreO0A7MessageO4fromAEs7Decoder_p_tKcfC,
+                            _$s10TransitKit0A4CoreO0A7MessageO6decode4fromAESays5UInt8VG_tFZ,
+                            _$s10TransitKit0A4CoreO0A7MessageO6encode2toys7Encoder_p_tKF,
+                            _$s10TransitKit0A4CoreO0A7MessageO6encodeSays5UInt8VGyF,
+                            _$s10TransitKit0A4CoreO0A7MessageOMa,
+                            _$s10TransitKit0A4CoreO0A7MessageOMn,
+                            _$s10TransitKit0A4CoreO0A7MessageON,
+                            _$s10TransitKit0A4CoreO0A7MessageOSEAAMc,
+                            _$s10TransitKit0A4CoreO0A7MessageOSEAAWP,
+                            _$s10TransitKit0A4CoreO0A7MessageOSQAAMc,
+                            _$s10TransitKit0A4CoreO0A7MessageOSQAAWP,
+                            _$s10TransitKit0A4CoreO0A7MessageOSeAAMc,
+                            _$s10TransitKit0A4CoreO0A7MessageOSeAAWP,
+                            _$s10TransitKit0A4CoreO0A7MessageOs23CustomStringConvertibleAAMc,
+                            _$s10TransitKit0A4CoreO0A7MessageOs23CustomStringConvertibleAAWP,
+                            _$s10TransitKit0A4CoreOMa, _$s10TransitKit0A4CoreOMn,
+                            _$s10TransitKit0A4CoreON,
+                            _$s10TransitKit10ConnectionMp,
+                            _$s10TransitKit10ConnectionTL,
+                            _$s10TransitKit7connect2toAA10Connection_pSS_tF,
+                            _$s10TransitKit8ListenerMp,
+                            _$s10TransitKit8ListenerTL,
+                            _transitkit_client_endpoint ]
+...

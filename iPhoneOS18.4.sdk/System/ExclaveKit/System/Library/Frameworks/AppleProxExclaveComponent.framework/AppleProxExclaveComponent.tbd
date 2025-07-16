@@ -1,0 +1,15 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/Frameworks/AppleProxExclaveComponent.framework/AppleProxExclaveComponent
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s25AppleProxExclaveComponent18__linkerWorkaroundyySaySuG_Says6UInt64VGtcvau,
+                            _$s25AppleProxExclaveComponent18__linkerWorkaroundyySaySuG_Says6UInt64VGtcvp,
+                            _AppleProxExclaveComponentVersionNumber,
+                            _AppleProxExclaveComponentVersionString ]
+...

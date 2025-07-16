@@ -1,0 +1,55 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/DriverKit/usr/lib/swift/libswift_math.dylib
+current-version:       310.100.8
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s5_math10fpclassifyySixSFRzlF,
+                            _$s5_math2jnySdSi_SdtF, _$s5_math2ynySdSi_SdtF,
+                            _$s5_math3cosyS2dF, _$s5_math3cosyS2fF,
+                            _$s5_math3erfyS2fF, _$s5_math3expyS2dF,
+                            _$s5_math3expyS2fF, _$s5_math3fmayxx_xxtSFRzlF,
+                            _$s5_math3logyS2dF, _$s5_math3logyS2fF,
+                            _$s5_math3nanySfSSF, _$s5_math3powyS2f_SftF,
+                            _$s5_math3sinyS2dF, _$s5_math3sinyS2fF,
+                            _$s5_math3tanyS2fF, _$s5_math4M_PISdvg,
+                            _$s5_math4acosyS2fF, _$s5_math4asinyS2fF,
+                            _$s5_math4atanyS2fF, _$s5_math4cbrtyS2fF,
+                            _$s5_math4ceilyxxSFRzlF, _$s5_math4coshyS2fF,
+                            _$s5_math4erfcyS2fF, _$s5_math4exp2yS2dF,
+                            _$s5_math4exp2yS2fF, _$s5_math4fabsyxxSFRzlF,
+                            _$s5_math4fdimyS2f_SftF, _$s5_math4fmaxyS2f_SftF,
+                            _$s5_math4fminyS2f_SftF, _$s5_math4fmodyxx_xtSFRzlF,
+                            _$s5_math4log2yS2dF, _$s5_math4log2yS2fF,
+                            _$s5_math4logbyS2fF, _$s5_math4modfyx_xtxSFRzlF,
+                            _$s5_math4rintyS2dF, _$s5_math4rintyS2fF,
+                            _$s5_math4sinhyS2fF, _$s5_math4sqrtyxxSFRzlF,
+                            _$s5_math4tanhyS2fF, _$s5_math5acoshyS2fF,
+                            _$s5_math5asinhyS2fF, _$s5_math5atan2yS2f_SftF,
+                            _$s5_math5atanhyS2fF, _$s5_math5expm1yS2fF,
+                            _$s5_math5flooryxxSFRzlF,
+                            _$s5_math5frexpyx_SitxSBRzlF,
+                            _$s5_math5hypotyS2f_SftF, _$s5_math5ilogbySixSBRzlF,
+                            _$s5_math5isinfySbxSFRzlF, _$s5_math5isnanySbxSFRzlF,
+                            _$s5_math5ldexpyS2d_SitF, _$s5_math5ldexpyS2f_SitF,
+                            _$s5_math5log10yS2dF, _$s5_math5log10yS2fF,
+                            _$s5_math5log1pyS2fF, _$s5_math5roundyxxSFRzlF,
+                            _$s5_math5truncyxxSFRzlF, _$s5_math6M_PI_2Sdvg,
+                            _$s5_math6M_PI_4Sdvg, _$s5_math6lgammaySd_SitSdF,
+                            _$s5_math6lgammaySf_SitSfF,
+                            _$s5_math6remquoySd_SitSd_SdtF,
+                            _$s5_math6remquoySf_SitSf_SftF,
+                            _$s5_math6scalbnyxx_SitSFRzlF, _$s5_math6tgammayS2fF,
+                            _$s5_math7M_SQRT2Sdvg, _$s5_math7signbitySixSFRzlF,
+                            _$s5_math8copysignyS2f_SftF,
+                            _$s5_math8isfiniteySbxSFRzlF,
+                            _$s5_math8isnormalySbxSFRzlF,
+                            _$s5_math9M_SQRT1_2Sdvg, _$s5_math9nearbyintyS2dF,
+                            _$s5_math9nearbyintyS2fF,
+                            _$s5_math9nextafteryS2f_SftF,
+                            _$s5_math9remainderyxx_xtSFRzlF,
+                            __swift_FORCE_LOAD_$_swift_math ]
+...

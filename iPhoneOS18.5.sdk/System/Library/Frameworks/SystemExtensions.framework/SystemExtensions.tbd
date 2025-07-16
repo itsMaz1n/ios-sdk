@@ -1,0 +1,26 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/Frameworks/SystemExtensions.framework/SystemExtensions
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _NSSystemExtensionUsageDescriptionKey,
+                            _OSBundleUsageDescriptionKey,
+                            _OSSystemExtensionErrorDomain,
+                            _applicationDisplayNameForExecutable ]
+    objc-classes:         [ OSSystemExtensionProperties,
+                            OSSystemExtensionsWorkspace ]
+    objc-ivars:           [ OSSystemExtensionProperties._URL,
+                            OSSystemExtensionProperties._bundleIdentifier,
+                            OSSystemExtensionProperties._bundleShortVersion,
+                            OSSystemExtensionProperties._bundleVersion,
+                            OSSystemExtensionProperties._displayName,
+                            OSSystemExtensionProperties._isAwaitingUserApproval,
+                            OSSystemExtensionProperties._isEnabled,
+                            OSSystemExtensionProperties._isUninstalling,
+                            OSSystemExtensionProperties._usageDescription ]
+...

@@ -1,0 +1,27 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/Frameworks/OSLogExclaves.framework/OSLogExclaves
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+parent-umbrella:       System
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s13OSLogExclaves0A9PublisherC11unsafe_syncyyF,
+                            _$s13OSLogExclaves0A9PublisherC11unsafe_syncyyFTq,
+                            _$s13OSLogExclaves0A9PublisherC4fromAC9Tightbeam0E8EndpointO_tcfC,
+                            _$s13OSLogExclaves0A9PublisherC4fromAC9Tightbeam0E8EndpointO_tcfCTq,
+                            _$s13OSLogExclaves0A9PublisherC4fromAC9Tightbeam0E8EndpointO_tcfc,
+                            _$s13OSLogExclaves0A9PublisherC8file_ttr6ofTypeys6UInt32V_tF,
+                            _$s13OSLogExclaves0A9PublisherC8file_ttr6ofTypeys6UInt32V_tFTq,
+                            _$s13OSLogExclaves0A9PublisherCMa,
+                            _$s13OSLogExclaves0A9PublisherCMm,
+                            _$s13OSLogExclaves0A9PublisherCMn,
+                            _$s13OSLogExclaves0A9PublisherCN,
+                            _$s13OSLogExclaves0A9PublisherCfD,
+                            _$s13OSLogExclaves0A9PublisherCfd,
+                            _OSLogExclavesVersionNumber,
+                            _OSLogExclavesVersionString ]
+...

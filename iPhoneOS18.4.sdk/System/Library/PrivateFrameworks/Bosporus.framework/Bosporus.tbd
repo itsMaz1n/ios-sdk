@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/Bosporus.framework/Bosporus
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _BosporusVersionNumber, _BosporusVersionString ]
+    objc-classes:         [ BPFeedbackListener, BPResponseHandler,
+                            SFResultSectionsDidLoadFeedback,
+                            _TtC8Bosporus10BPResponse,
+                            _TtC8Bosporus15BPResultSection,
+                            _TtC8Bosporus19BPSpotlightResponse,
+                            _TtC8Bosporus26BPApplicationClientService,
+                            _TtC8Bosporus7BPQuery, _TtC8Bosporus8BPResult ]
+...

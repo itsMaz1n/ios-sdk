@@ -1,0 +1,9 @@
+--- !tapi-tbd
+tbd-version:     4
+targets:         [ arm64-ios, arm64e-ios ]
+install-name:    '/usr/lib/swift/libswiftFileProvider.dylib'
+current-version: 2882.102.2
+reexported-libraries:
+  - targets:         [ arm64-ios, arm64e-ios ]
+    libraries:       [ '/System/Library/Frameworks/FileProvider.framework/FileProvider' ]
+...

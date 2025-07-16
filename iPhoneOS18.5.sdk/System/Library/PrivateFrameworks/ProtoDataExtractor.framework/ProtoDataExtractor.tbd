@@ -1,0 +1,16 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ProtoDataExtractor.framework/ProtoDataExtractor
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ProtoDataExtractorVersionNumber,
+                            _ProtoDataExtractorVersionString ]
+    objc-classes:         [ _TtC18ProtoDataExtractor14DataBiomeEvent,
+                            _TtC18ProtoDataExtractor15DillProvisional,
+                            _TtC18ProtoDataExtractor30DillSiriInstrumentationWrapper ]
+...

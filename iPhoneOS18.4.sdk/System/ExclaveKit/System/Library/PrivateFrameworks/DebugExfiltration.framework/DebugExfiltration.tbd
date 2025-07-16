@@ -1,0 +1,33 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/PrivateFrameworks/DebugExfiltration.framework/DebugExfiltration
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+parent-umbrella:       System
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s17DebugExfiltration0aB14ServiceWrapperC0B10ReadCommon2id6buffer6length8blockings6UInt64VAJ_Spys5UInt8VGs6UInt32VSbtF,
+                            _$s17DebugExfiltration0aB14ServiceWrapperC0B15ReadNonBlocking2id6buffer6lengths6UInt64VAI_Spys5UInt8VGs6UInt32VtF,
+                            _$s17DebugExfiltration0aB14ServiceWrapperC0B4Data2id6buffer6lengths6UInt64VAI_SPys5UInt8VGs6UInt32VtF,
+                            _$s17DebugExfiltration0aB14ServiceWrapperC0B4Read2id6buffer6lengths6UInt64VAI_Spys5UInt8VGs6UInt32VtF,
+                            _$s17DebugExfiltration0aB14ServiceWrapperC21NewChannelWithSegment4name05shmemH0s6UInt64VSS_12SharedMemory0H6AccessCtF,
+                            _$s17DebugExfiltration0aB14ServiceWrapperC3capSuvg,
+                            _$s17DebugExfiltration0aB14ServiceWrapperC3capSuvpMV,
+                            _$s17DebugExfiltration0aB14ServiceWrapperC4fromAC9Tightbeam0F8EndpointO_tcfC,
+                            _$s17DebugExfiltration0aB14ServiceWrapperC4fromAC9Tightbeam0F8EndpointO_tcfCTj,
+                            _$s17DebugExfiltration0aB14ServiceWrapperC4fromAC9Tightbeam0F8EndpointO_tcfCTq,
+                            _$s17DebugExfiltration0aB14ServiceWrapperC4fromAC9Tightbeam0F8EndpointO_tcfc,
+                            _$s17DebugExfiltration0aB14ServiceWrapperCMa,
+                            _$s17DebugExfiltration0aB14ServiceWrapperCMm,
+                            _$s17DebugExfiltration0aB14ServiceWrapperCMn,
+                            _$s17DebugExfiltration0aB14ServiceWrapperCMo,
+                            _$s17DebugExfiltration0aB14ServiceWrapperCMu,
+                            _$s17DebugExfiltration0aB14ServiceWrapperCN,
+                            _$s17DebugExfiltration0aB14ServiceWrapperCfD,
+                            _$s17DebugExfiltration0aB14ServiceWrapperCfd,
+                            _DebugExfiltrationVersionNumber,
+                            _DebugExfiltrationVersionString ]
+...

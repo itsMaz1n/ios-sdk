@@ -1,0 +1,24 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/usr/lib/libSystem.dylib
+current-version:       1351
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    re-exports:           [ /System/ExclaveKit/usr/lib/system/libcorecrypto.dylib,
+                            /System/ExclaveKit/usr/lib/system/libdispatch.dylib,
+                            /System/ExclaveKit/usr/lib/system/libdyld.dylib,
+                            /System/ExclaveKit/usr/lib/system/liblibc.dylib,
+                            /System/ExclaveKit/usr/lib/system/liblibc_plat.dylib,
+                            /System/ExclaveKit/usr/lib/system/libmacho.dylib,
+                            /System/ExclaveKit/usr/lib/system/libsystem_blocks.dylib,
+                            /System/ExclaveKit/usr/lib/system/libsystem_c.dylib,
+                            /System/ExclaveKit/usr/lib/system/libsystem_collections.dylib,
+                            /System/ExclaveKit/usr/lib/system/libsystem_m.dylib,
+                            /System/ExclaveKit/usr/lib/system/libsystem_malloc.dylib,
+                            /System/ExclaveKit/usr/lib/system/libsystem_platform.dylib,
+                            /System/ExclaveKit/usr/lib/system/libsystem_trace.dylib,
+                            /System/ExclaveKit/usr/lib/system/libunwind.dylib ]
+...

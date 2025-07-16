@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/PrivateFrameworks/AudioCaptureServer.framework/AudioCaptureServer
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AudioCaptureDirectory, _AudioCaptureInitialize,
+                            _AudioCaptureInitializeWithSharedMemoryContext,
+                            _AudioCapturerCreateForData,
+                            _AudioCapturerCreateForEncodedAudioData,
+                            _AudioCapturerCreateForPCMAudioData,
+                            _AudioCapturerDestroy, _AudioCapturerFilePath,
+                            _AudioCapturerGetAudioFileID,
+                            _AudioCapturerIsPreferenceEnabled,
+                            _AudioCapturerQueryPreference,
+                            _AudioCapturerWriteBuffer,
+                            _AudioCapturerWriteBufferList,
+                            _AudioCapturerWriteData, _AudioCapturerWritePackets,
+                            _kAudioCaptureDataType_FilterCoefficients,
+                            _kAudioCaptureDataType_ImpulseResponses ]
+...

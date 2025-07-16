@@ -1,0 +1,59 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/Frameworks/AVFAudio.framework/AVFAudio
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s8AVFAudio18ExclaveVoiceClientC012channelCountD033_E04005894CC2DE8DCDC82ED20CA8651FLLSivpfi,
+                            _$s8AVFAudio18ExclaveVoiceClientC017isolatedCoreAudioD6Buffer16channelCountICAC0ijD09numFramesAC12SharedMemory13SegmentAccessC_S3itKcfC,
+                            _$s8AVFAudio18ExclaveVoiceClientC017isolatedCoreAudioD6Buffer16channelCountICAC0ijD09numFramesAC12SharedMemory13SegmentAccessC_S3itKcfCTq,
+                            _$s8AVFAudio18ExclaveVoiceClientC017isolatedCoreAudioD6Buffer16channelCountICAC0ijD09numFramesAC12SharedMemory13SegmentAccessC_S3itKcfc,
+                            _$s8AVFAudio18ExclaveVoiceClientC13copyAudioData2toySrySfG_tKF,
+                            _$s8AVFAudio18ExclaveVoiceClientC13copyAudioData2toySrySfG_tKFTq,
+                            _$s8AVFAudio18ExclaveVoiceClientC16channelCountICAC33_E04005894CC2DE8DCDC82ED20CA8651FLLSivpfi,
+                            _$s8AVFAudio18ExclaveVoiceClientC19sharedMemoryPointer33_E04005894CC2DE8DCDC82ED20CA8651FLLSPySfGSgvpfi,
+                            _$s8AVFAudio18ExclaveVoiceClientC22maxTightbeamBufferSize33_E04005894CC2DE8DCDC82ED20CA8651FLLSivpfi,
+                            _$s8AVFAudio18ExclaveVoiceClientC25sharedMemoryBufferPointer33_E04005894CC2DE8DCDC82ED20CA8651FLLSRySfGSgvpfi,
+                            _$s8AVFAudio18ExclaveVoiceClientC26icacSiriSharedMemoryBuffer33_E04005894CC2DE8DCDC82ED20CA8651FLLAA06SecuregH0CSgvpfi,
+                            _$s8AVFAudio18ExclaveVoiceClientC34updateAOPVoiceTriggerLanguageModel5modelySrys5UInt8VG_tKF,
+                            _$s8AVFAudio18ExclaveVoiceClientC34updateAOPVoiceTriggerLanguageModel5modelySrys5UInt8VG_tKFTq,
+                            _$s8AVFAudio18ExclaveVoiceClientC9numFrames33_E04005894CC2DE8DCDC82ED20CA8651FLLSivpfi,
+                            _$s8AVFAudio18ExclaveVoiceClientCMa,
+                            _$s8AVFAudio18ExclaveVoiceClientCMm,
+                            _$s8AVFAudio18ExclaveVoiceClientCMn,
+                            _$s8AVFAudio18ExclaveVoiceClientCN,
+                            _$s8AVFAudio18ExclaveVoiceClientCfD,
+                            _$s8AVFAudio18ExclaveVoiceClientCfd,
+                            _AVAudioBitRateStrategy_Constant,
+                            _AVAudioBitRateStrategy_LongTermAverage,
+                            _AVAudioBitRateStrategy_Variable,
+                            _AVAudioBitRateStrategy_VariableConstrained,
+                            _AVAudioFileTypeKey, _AVChannelLayoutKey,
+                            _AVEncoderAudioQualityForVBRKey,
+                            _AVEncoderAudioQualityKey, _AVEncoderBitDepthHintKey,
+                            _AVEncoderBitRateKey, _AVEncoderBitRatePerChannelKey,
+                            _AVEncoderBitRateStrategyKey, _AVFormatIDKey,
+                            _AVLinearPCMBitDepthKey, _AVLinearPCMIsBigEndianKey,
+                            _AVLinearPCMIsFloatKey, _AVLinearPCMIsNonInterleaved,
+                            _AVNumberOfChannelsKey,
+                            _AVSampleRateConverterAlgorithmKey,
+                            _AVSampleRateConverterAlgorithm_Mastering,
+                            _AVSampleRateConverterAlgorithm_MinimumPhase,
+                            _AVSampleRateConverterAlgorithm_Normal,
+                            _AVSampleRateConverterAudioQualityKey,
+                            _AVSampleRateKey ]
+    objc-classes:         [ AVAudioBuffer, AVAudioChannelLayout,
+                            AVAudioCompressedBuffer, AVAudioFormat,
+                            AVAudioPCMBuffer, AVAudioTime ]
+    objc-ivars:           [ AVAudioBuffer._deallocator, AVAudioBuffer._impl,
+                            AVAudioChannelLayout._layout,
+                            AVAudioChannelLayout._layoutTag,
+                            AVAudioChannelLayout._reserved, AVAudioFormat._asbd,
+                            AVAudioFormat._commonFormat, AVAudioFormat._layout,
+                            AVAudioFormat._reserved, AVAudioTime._ats,
+                            AVAudioTime._reserved, AVAudioTime._sampleRate ]
+...

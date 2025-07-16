@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/Frameworks/Common_ISP_EK_TBModule.framework/Common_ISP_EK_TBModule
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _Common_ISP_EK_TBModuleVersionNumber,
+                            _Common_ISP_EK_TBModuleVersionString ]
+...

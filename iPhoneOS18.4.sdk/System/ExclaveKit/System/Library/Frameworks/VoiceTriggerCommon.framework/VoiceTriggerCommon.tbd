@@ -1,0 +1,31 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/Frameworks/VoiceTriggerCommon.framework/VoiceTriggerCommon
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s18VoiceTriggerCommon0aB10SecureDataV06secureB13PayloadLengths6UInt32Vvg,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV06secureB13PayloadLengths6UInt32VvpMV,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV06secureB7PayloadSays5UInt8VGvg,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV06secureB7PayloadSays5UInt8VGvpMV,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV11encodedSize2ofSiAC_tFZ,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV15sampleFrameTimes6UInt64Vvg,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV15sampleFrameTimes6UInt64VvpMV,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV19triggerLengthFramess6UInt64Vvg,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV19triggerLengthFramess6UInt64VvpMV,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV4fromAC9Tightbeam0G7DecoderV_tKcfC,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV6encode2toy9Tightbeam0H7EncoderV_tKF,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV9Tightbeam0F9DecodableAAMc,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV9Tightbeam0F9EncodableAAMc,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV9timeStamp15sampleFrameTime19triggerLengthFrames06secureb7PayloadL00nbO0ACs6UInt64V_A2Js6UInt32VSays5UInt8VGtcfC,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV9timeStamps6UInt64Vvg,
+                            _$s18VoiceTriggerCommon0aB10SecureDataV9timeStamps6UInt64VvpMV,
+                            _$s18VoiceTriggerCommon0aB10SecureDataVACycfC,
+                            _$s18VoiceTriggerCommon0aB10SecureDataVMa,
+                            _$s18VoiceTriggerCommon0aB10SecureDataVMn,
+                            _$s18VoiceTriggerCommon0aB10SecureDataVN ]
+...

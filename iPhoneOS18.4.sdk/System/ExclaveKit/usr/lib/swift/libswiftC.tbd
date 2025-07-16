@@ -1,0 +1,32 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/usr/lib/swift/libswiftC.dylib
+current-version:       310.100.8
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s1C10MAP_FAILEDSvSgvg,
+                            _$s1C4openys5Int32VSPys4Int8VG_ADs6UInt16VtF,
+                            _$s1C4openys5Int32VSPys4Int8VG_ADtF,
+                            _$s1C5fcntlys5Int32VAD_A2DtF,
+                            _$s1C5fcntlys5Int32VAD_ADSvtF,
+                            _$s1C5fcntlys5Int32VAD_ADtF, _$s1C6S_IFMTs6UInt16Vvg,
+                            _$s1C7S_IEXECs6UInt16Vvg, _$s1C7S_IFBLKs6UInt16Vvg,
+                            _$s1C7S_IFCHRs6UInt16Vvg, _$s1C7S_IFDIRs6UInt16Vvg,
+                            _$s1C7S_IFIFOs6UInt16Vvg, _$s1C7S_IFLNKs6UInt16Vvg,
+                            _$s1C7S_IFREGs6UInt16Vvg, _$s1C7S_IFWHTs6UInt16Vvg,
+                            _$s1C7S_IREADs6UInt16Vvg, _$s1C7S_IRGRPs6UInt16Vvg,
+                            _$s1C7S_IROTHs6UInt16Vvg, _$s1C7S_IRUSRs6UInt16Vvg,
+                            _$s1C7S_IRWXGs6UInt16Vvg, _$s1C7S_IRWXOs6UInt16Vvg,
+                            _$s1C7S_IRWXUs6UInt16Vvg, _$s1C7S_ISGIDs6UInt16Vvg,
+                            _$s1C7S_ISTXTs6UInt16Vvg, _$s1C7S_ISUIDs6UInt16Vvg,
+                            _$s1C7S_ISVTXs6UInt16Vvg, _$s1C7S_IWGRPs6UInt16Vvg,
+                            _$s1C7S_IWOTHs6UInt16Vvg, _$s1C7S_IWUSRs6UInt16Vvg,
+                            _$s1C7S_IXGRPs6UInt16Vvg, _$s1C7S_IXOTHs6UInt16Vvg,
+                            _$s1C7S_IXUSRs6UInt16Vvg, _$s1C8S_IFSOCKs6UInt16Vvg,
+                            _$s1C8S_IWRITEs6UInt16Vvg,
+                            __swift_FORCE_LOAD_$_swiftC ]
+...

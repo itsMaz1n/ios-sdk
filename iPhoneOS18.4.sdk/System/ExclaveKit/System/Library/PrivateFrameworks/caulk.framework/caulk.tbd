@@ -1,0 +1,44 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/PrivateFrameworks/caulk.framework/caulk
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ __ZN5caulk15memory_resourceD0Ev,
+                            __ZN5caulk15memory_resourceD1Ev,
+                            __ZN5caulk15memory_resourceD2Ev,
+                            __ZN5caulk23rt_safe_memory_resource11rt_allocateEmm,
+                            __ZN5caulk23rt_safe_memory_resource13rt_deallocateEPvmm,
+                            __ZN5caulk23rt_safe_memory_resourceD0Ev,
+                            __ZN5caulk23rt_safe_memory_resourceD1Ev,
+                            __ZN5caulk23rt_safe_memory_resourceD2Ev,
+                            __ZN5caulk5alloc14base_allocator3logEv,
+                            __ZN5caulk5alloc15memory_resourceD0Ev,
+                            __ZN5caulk5alloc15memory_resourceD1Ev,
+                            __ZN5caulk5alloc15memory_resourceD2Ev,
+                            __ZN5caulk5alloc16malloc_allocator10deallocateENS0_5blockEm,
+                            __ZN5caulk5alloc16malloc_allocator8allocateEmm,
+                            __ZN5caulk5alloc16malloc_allocatorC1Ev,
+                            __ZN5caulk5alloc16malloc_allocatorC2Ev,
+                            __ZN5caulk5alloc20get_default_resourceEv,
+                            __ZN5caulk5alloc23rt_safe_memory_resourceD0Ev,
+                            __ZN5caulk5alloc23rt_safe_memory_resourceD1Ev,
+                            __ZN5caulk5alloc23rt_safe_memory_resourceD2Ev,
+                            __ZNK5caulk15memory_resource11do_is_equalERKNSt3__13pmr15memory_resourceE,
+                            __ZNK5caulk5alloc16malloc_allocator8describeERNS0_14base_allocator9formatterE,
+                            __ZTIN5caulk15memory_resourceE,
+                            __ZTIN5caulk23rt_safe_memory_resourceE,
+                            __ZTIN5caulk5alloc15memory_resourceE,
+                            __ZTIN5caulk5alloc23rt_safe_memory_resourceE,
+                            __ZTSN5caulk15memory_resourceE,
+                            __ZTSN5caulk23rt_safe_memory_resourceE,
+                            __ZTSN5caulk5alloc15memory_resourceE,
+                            __ZTSN5caulk5alloc23rt_safe_memory_resourceE,
+                            __ZTVN5caulk15memory_resourceE,
+                            __ZTVN5caulk23rt_safe_memory_resourceE,
+                            __ZTVN5caulk5alloc15memory_resourceE,
+                            __ZTVN5caulk5alloc23rt_safe_memory_resourceE ]
+...

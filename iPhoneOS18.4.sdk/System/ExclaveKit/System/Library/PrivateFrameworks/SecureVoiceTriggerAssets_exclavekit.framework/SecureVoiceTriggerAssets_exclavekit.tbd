@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/PrivateFrameworks/SecureVoiceTriggerAssets_exclavekit.framework/SecureVoiceTriggerAssets_exclavekit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s35SecureVoiceTriggerAssets_exclavekit0abcD0C0abcD7VersionSdyFTj,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0C0abcD7VersionSdyFTq,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CACycfC,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CACycfCTj,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CACycfCTq,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CACycfc,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CMa,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CMm,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CMn,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CMo,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CMu,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CN,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0CfD,
+                            _$s35SecureVoiceTriggerAssets_exclavekit0abcD0Cfd ]
+...

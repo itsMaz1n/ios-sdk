@@ -1,0 +1,36 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/AppMigrationKit.framework/AppMigrationKit
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _AppMigrationKitVersionNumber,
+                            _AppMigrationKitVersionString,
+                            _validatePathInArchive, _write_callback ]
+    objc-classes:         [ AMKAppExtensionMetrics, AMKAppIdentifier,
+                            AMKArchiveReader, AMKArchiveWriter, AMKDestinationInfo,
+                            AMKDeviceToDeviceTransferMetrics, AMKPreflightInfo,
+                            AMKPurgeability, AMKRawMigrationRequest,
+                            AMKResourcesImportRequest,
+                            AMKSerializedDataImportRequest,
+                            AMKSerializedDataMetrics, AMKTransferInfo ]
+    objc-ivars:           [ AMKArchiveReader._fileHandle,
+                            AMKArchiveReader._ignoredFilesCount,
+                            AMKArchiveReader._isCancelled,
+                            AMKArchiveReader._queue,
+                            AMKArchiveReader._readArchive,
+                            AMKArchiveReader._writeArchive,
+                            AMKArchiveWriter._archive,
+                            AMKArchiveWriter._compressedBytes,
+                            AMKArchiveWriter._directoryCount,
+                            AMKArchiveWriter._fileCount,
+                            AMKArchiveWriter._fileHandle,
+                            AMKArchiveWriter._progress, AMKArchiveWriter._queue,
+                            AMKArchiveWriter._symlinkCount,
+                            AMKArchiveWriter._uncompressedBytes,
+                            AMKArchiveWriter._updateProgress ]
+...

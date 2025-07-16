@@ -1,0 +1,27 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/PrivateFrameworks/SphinxProxTrustedFDR.framework/SphinxProxTrustedFDR
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s20SphinxProxTrustedFDR0abC9FDRClientC14setCalibration11calibrationSbSays5UInt8VG_tF,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientC14setCalibration11calibrationSbSays5UInt8VG_tFTq,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientC15getSerialNumberSSyF,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientC15getSerialNumberSSyFTq,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientCACycfC,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientCACycfCTq,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientCACycfc,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientCMa,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientCMm,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientCMn,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientCN,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientCfD,
+                            _$s20SphinxProxTrustedFDR0abC9FDRClientCfd,
+                            _SphinxProxTrustedFDRVersionNumber,
+                            _SphinxProxTrustedFDRVersionString,
+                            _aop_sensor_fdr_endpoint ]
+...

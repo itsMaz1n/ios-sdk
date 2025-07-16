@@ -1,0 +1,13 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/Frameworks/ExclaveFDRDecodeRawDataStoreKitComponent.framework/ExclaveFDRDecodeRawDataStoreKitComponent
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s40ExclaveFDRDecodeRawDataStoreKitComponent18__linkerWorkaroundyySaySuG_Says6UInt64VGtcvau,
+                            _$s40ExclaveFDRDecodeRawDataStoreKitComponent18__linkerWorkaroundyySaySuG_Says6UInt64VGtcvp ]
+...

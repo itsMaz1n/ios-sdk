@@ -1,0 +1,74 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SyncedDefaultsDaemon.framework/SyncedDefaultsDaemon
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _SYDEnterSandbox,
+                            _SYDSyncManagerNotificationKeyChangedKeys,
+                            _SYDSyncManagerNotificationKeyStoreID,
+                            _SYDSyncManagerNotificationValuesDidChange,
+                            _SyncedDefaultsDaemonVersionNumber,
+                            _SyncedDefaultsDaemonVersionString ]
+    objc-classes:         [ SYDCoreDataStore, SYDDaemon,
+                            SYDDaemonToClientConnection, SYDKeyID, SYDKeyValue,
+                            SYDManagedDatabase, SYDManagedKeyValue,
+                            SYDManagedStore, SYDPlistToCoreDataMigrator,
+                            SYDStoreBundleMap, SYDSyncManager, SYDTCCHelper,
+                            SYDUserNotifications ]
+    objc-ivars:           [ SYDCoreDataStore._URL,
+                            SYDCoreDataStore.__persistentContainer,
+                            SYDCoreDataStore._contexts,
+                            SYDCoreDataStore._contextsLock,
+                            SYDCoreDataStore._delegate,
+                            SYDCoreDataStore._fileProtectionType,
+                            SYDCoreDataStore._persistentContainerQueue,
+                            SYDCoreDataStore._shouldLogValues,
+                            SYDCoreDataStore._shouldSendAnalytics,
+                            SYDCoreDataStore._transactionContext,
+                            SYDDaemon._clientConnections,
+                            SYDDaemon._initializingSyncManagers,
+                            SYDDaemon._queue, SYDDaemon._syncManagersByPersona,
+                            SYDDaemon._xpcListener,
+                            SYDDaemonToClientConnection._applicationIdentifier,
+                            SYDDaemonToClientConnection._callbackQueue,
+                            SYDDaemonToClientConnection._delegate,
+                            SYDDaemonToClientConnection._didRefreshBundleMap,
+                            SYDDaemonToClientConnection._entitledStoreIDs,
+                            SYDDaemonToClientConnection._ignoreQuotaEntitlementValue,
+                            SYDDaemonToClientConnection._manualSyncCount,
+                            SYDDaemonToClientConnection._notEntitledStoreIDs,
+                            SYDDaemonToClientConnection._queue,
+                            SYDDaemonToClientConnection._registeredStoreIDs,
+                            SYDDaemonToClientConnection._supportsTesting,
+                            SYDDaemonToClientConnection._xpcConnection,
+                            SYDKeyValue._isNewKeyValue, SYDKeyValue._keyID,
+                            SYDKeyValue._recordName,
+                            SYDKeyValue._serverSystemFieldsRecordData,
+                            SYDKeyValue._value,
+                            SYDKeyValue._valueModificationDate,
+                            SYDStoreBundleMap._cachedStoreBundleMap,
+                            SYDStoreBundleMap._queue,
+                            SYDSyncManager._alwaysSaveRecordZones,
+                            SYDSyncManager._callbackQueue,
+                            SYDSyncManager._container,
+                            SYDSyncManager._coreDataStore,
+                            SYDSyncManager._delegate,
+                            SYDSyncManager._disableAutomaticRetries,
+                            SYDSyncManager._engine,
+                            SYDSyncManager._maxPendingFetchedRecords,
+                            SYDSyncManager._mobileKeybagNotifyToken,
+                            SYDSyncManager._pendingDeletedRecordIDs,
+                            SYDSyncManager._pendingFetchedRecords,
+                            SYDSyncManager._personaUniqueString,
+                            SYDSyncManager._queue,
+                            SYDSyncManager._storeIdentifiersWithChangedValuesDuringFetchChanges,
+                            SYDSyncManager._storeType,
+                            SYDSyncManager._testConfiguration,
+                            SYDTCCHelper._cachedDisabledStoreIdentifiers,
+                            SYDTCCHelper._notifyToken, SYDTCCHelper._queue ]
+...

@@ -1,0 +1,41 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/PrivateFrameworks/CoreMedia.framework/CoreMedia
+current-version:       3210.19.1
+compatibility-version: 1
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _CMTimeAbsoluteValue, _CMTimeAdd, _CMTimeClampToRange,
+                            _CMTimeCompare, _CMTimeConvertScale,
+                            _CMTimeCopyAsDictionary, _CMTimeCopyDescription,
+                            _CMTimeDivide, _CMTimeFoldIntoRange, _CMTimeGetSeconds,
+                            _CMTimeMake, _CMTimeMakeFromDictionary,
+                            _CMTimeMakeWithEpoch, _CMTimeMakeWithSeconds,
+                            _CMTimeMapDurationFromRangeToRange,
+                            _CMTimeMapTimeFromRangeToRange,
+                            _CMTimeMappingCopyAsDictionary,
+                            _CMTimeMappingCopyDescription, _CMTimeMappingMake,
+                            _CMTimeMappingMakeEmpty,
+                            _CMTimeMappingMakeFromDictionary, _CMTimeMappingShow,
+                            _CMTimeMaximum, _CMTimeMinimum, _CMTimeMultiply,
+                            _CMTimeMultiplyByFloat64, _CMTimeMultiplyByRatio,
+                            _CMTimeMultiplyTimeByTimeRatio,
+                            _CMTimeRangeContainsTime,
+                            _CMTimeRangeContainsTimeRange,
+                            _CMTimeRangeCopyAsDictionary,
+                            _CMTimeRangeCopyDescription, _CMTimeRangeEqual,
+                            _CMTimeRangeFromTimeToTime, _CMTimeRangeGetEnd,
+                            _CMTimeRangeGetIntersection, _CMTimeRangeGetUnion,
+                            _CMTimeRangeMake, _CMTimeRangeMakeFromDictionary,
+                            _CMTimeRangeShow, _CMTimeRemainder, _CMTimeShow,
+                            _CMTimeSubtract, _kCMTimeEpochKey, _kCMTimeFlagsKey,
+                            _kCMTimeIndefinite, _kCMTimeInvalid,
+                            _kCMTimeMappingInvalid, _kCMTimeMappingSourceKey,
+                            _kCMTimeMappingTargetKey, _kCMTimeNegativeInfinity,
+                            _kCMTimePositiveInfinity, _kCMTimeRangeDurationKey,
+                            _kCMTimeRangeInvalid, _kCMTimeRangeStartKey,
+                            _kCMTimeRangeZero, _kCMTimeScaleKey, _kCMTimeValueKey,
+                            _kCMTimeZero ]
+...

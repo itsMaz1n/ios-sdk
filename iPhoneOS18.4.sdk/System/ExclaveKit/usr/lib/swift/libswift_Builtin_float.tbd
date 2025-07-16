@@ -1,0 +1,37 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/usr/lib/swift/libswift_Builtin_float.dylib
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s6Darwin11DBL_EPSILONSdvau,
+                            _$s6Darwin11DBL_EPSILONSdvp,
+                            _$s6Darwin11DBL_MAX_EXPSivau,
+                            _$s6Darwin11DBL_MAX_EXPSivp,
+                            _$s6Darwin11DBL_MIN_EXPSivau,
+                            _$s6Darwin11DBL_MIN_EXPSivp,
+                            _$s6Darwin11FLT_EPSILONSfvau,
+                            _$s6Darwin11FLT_EPSILONSfvp,
+                            _$s6Darwin11FLT_MAX_EXPSivau,
+                            _$s6Darwin11FLT_MAX_EXPSivp,
+                            _$s6Darwin11FLT_MIN_EXPSivau,
+                            _$s6Darwin11FLT_MIN_EXPSivp,
+                            _$s6Darwin12DBL_MANT_DIGSivau,
+                            _$s6Darwin12DBL_MANT_DIGSivp,
+                            _$s6Darwin12DBL_TRUE_MINSdvau,
+                            _$s6Darwin12DBL_TRUE_MINSdvp,
+                            _$s6Darwin12FLT_MANT_DIGSivau,
+                            _$s6Darwin12FLT_MANT_DIGSivp,
+                            _$s6Darwin12FLT_TRUE_MINSfvau,
+                            _$s6Darwin12FLT_TRUE_MINSfvp,
+                            _$s6Darwin7DBL_MAXSdvau, _$s6Darwin7DBL_MAXSdvp,
+                            _$s6Darwin7DBL_MINSdvau, _$s6Darwin7DBL_MINSdvp,
+                            _$s6Darwin7FLT_MAXSfvau, _$s6Darwin7FLT_MAXSfvp,
+                            _$s6Darwin7FLT_MINSfvau, _$s6Darwin7FLT_MINSfvp,
+                            _$s6Darwin9FLT_RADIXSivau, _$s6Darwin9FLT_RADIXSivp,
+                            __swift_FORCE_LOAD_$_swift_Builtin_float ]
+...

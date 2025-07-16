@@ -1,0 +1,25 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/Frameworks/AOPVoiceTriggerSecure.framework/AOPVoiceTriggerSecure
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelV11encodedSize2ofSiAC_tFZ,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelV11modelBufferACSays5UInt8VG_tcfC,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelV11modelBufferSays5UInt8VGvM,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelV11modelBufferSays5UInt8VGvg,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelV11modelBufferSays5UInt8VGvpMV,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelV11modelBufferSays5UInt8VGvs,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelV4fromAC9Tightbeam0H7DecoderV_tKcfC,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelV6encode2toy9Tightbeam0I7EncoderV_tKF,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelV9Tightbeam0G9DecodableAAMc,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelV9Tightbeam0G9EncodableAAMc,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelVACycfC,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelVMa,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelVMn,
+                            _$s21AOPVoiceTriggerSecure05VoiceB13LanguageModelVN ]
+...

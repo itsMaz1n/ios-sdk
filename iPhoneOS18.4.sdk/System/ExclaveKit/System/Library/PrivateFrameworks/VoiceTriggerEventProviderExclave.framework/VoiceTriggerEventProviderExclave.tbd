@@ -1,0 +1,28 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/PrivateFrameworks/VoiceTriggerEventProviderExclave.framework/VoiceTriggerEventProviderExclave
+current-version:       0
+compatibility-version: 0
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s32VoiceTriggerEventProviderExclave0abC12GetterClientC03getabC0s6UInt64VyKFTj,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientC03getabC0s6UInt64VyKFTq,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientC4fromAC9Tightbeam0I8EndpointO_tcfC,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientC4fromAC9Tightbeam0I8EndpointO_tcfCTj,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientC4fromAC9Tightbeam0I8EndpointO_tcfCTq,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientC4fromAC9Tightbeam0I8EndpointO_tcfc,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientC9Tightbeam0H17EndpointDecodableAAMc,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientCMa,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientCMm,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientCMn,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientCMo,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientCMu,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientCN,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientCfD,
+                            _$s32VoiceTriggerEventProviderExclave0abC12GetterClientCfd,
+                            _VoiceTriggerEventProviderExclaveVersionNumber,
+                            _VoiceTriggerEventProviderExclaveVersionString ]
+...

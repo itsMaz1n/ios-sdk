@@ -1,0 +1,64 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/usr/lib/system/libsystem_trace.dylib
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+parent-umbrella:       System
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ __os_log_default, __os_log_disabled,
+                            __os_log_dsc_load_addr, __os_log_dsc_size,
+                            __os_log_fmt_flatten_masked_data,
+                            __os_log_fmt_flatten_object,
+                            __os_log_fmt_flatten_to_blob, __os_log_impl,
+                            __os_log_set_nscf_formatter,
+                            __os_signpost_emit_with_name_impl, __os_trace,
+                            __os_trace_unsafe_ascii_tbl, _console_log,
+                            _log_server_available, _log_server_default_client,
+                            _log_server_endpoint, _log_server_file_ttr,
+                            _log_server_get_preferences,
+                            _log_server_get_subsystem_id,
+                            _log_server_init_for_connection,
+                            _log_server_init_for_endpoint,
+                            _log_server_legacy_available, _log_server_log,
+                            _log_server_signpost_generate_id, _log_server_sync,
+                            _mh_uuid_cache_find, _mh_uuid_cache_init,
+                            _mh_uuid_cache_insert,
+                            _os_log_backtrace_create_from_pcs,
+                            _os_log_backtrace_create_from_return_address,
+                            _os_log_backtrace_destroy,
+                            _os_log_backtrace_get_frames,
+                            _os_log_backtrace_get_length,
+                            _os_log_backtrace_serialize_to_blob,
+                            _os_log_client_file_ttr,
+                            _os_log_client_init_for_connection,
+                            _os_log_client_init_for_endpoint,
+                            _os_log_client_unsafe_sync, _os_log_create,
+                            _os_log_create_for_client, _os_log_fmt_compose,
+                            _os_log_fmt_convert_trace, _os_log_fmt_delimit,
+                            _os_log_fmt_encode_dynamic,
+                            _os_log_fmt_extract_message,
+                            _os_log_fmt_extract_pubdata, _os_log_fmt_flatten,
+                            _os_log_fmt_get_data, _os_log_fmt_next_cmd,
+                            _os_log_fmt_read_aster_if_necessary,
+                            _os_log_fmt_read_scalar, _os_log_type_enabled,
+                            _os_signpost_enabled, _os_signpost_id_generate,
+                            _os_signpost_id_make_with_pointer, _os_simple_hash,
+                            _os_simple_hash_string, _os_trace_blob_add_hexdump,
+                            _os_trace_blob_add_slow,
+                            _os_trace_blob_add_unsafe_bytes, _os_trace_blob_addf,
+                            _os_trace_blob_addns, _os_trace_blob_addnws,
+                            _os_trace_blob_destroy_slow, _os_trace_blob_detach,
+                            _os_trace_blob_grow, _os_trace_blob_vaddf,
+                            _privacy_flags2opt ]
+    objc-classes:         [ OSLogCoder ]
+    objc-ivars:           [ OSLogCoder._fmt_cmd, OSLogCoder._initialized,
+                            OSLogCoder._mask, OSLogCoder._maskbuf,
+                            OSLogCoder._maxsz, OSLogCoder._ob, OSLogCoder._ob_mask,
+                            OSLogCoder._ob_priv, OSLogCoder._ob_pub,
+                            OSLogCoder._offset, OSLogCoder._privacy_level,
+                            OSLogCoder._truncated, OSLogCoder._written ]
+...

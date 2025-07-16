@@ -1,0 +1,58 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/ExclaveKit/System/Library/Frameworks/EXSimpleFileIO.framework/EXSimpleFileIO
+current-version:       262.100.41
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _$s14EXSimpleFileIO7EXFilesC19useSharedMemoryFrom3segy0fG013SegmentAccessC_tFTj,
+                            _$s14EXSimpleFileIO7EXFilesC19useSharedMemoryFrom3segy0fG013SegmentAccessC_tFTq,
+                            _$s14EXSimpleFileIO7EXFilesC24useSharedMemoryV1Segment5memIDys6UInt32V_tFTj,
+                            _$s14EXSimpleFileIO7EXFilesC24useSharedMemoryV1Segment5memIDys6UInt32V_tFTq,
+                            _$s14EXSimpleFileIO7EXFilesC4file4pathAC6EXFileCSS_tFTj,
+                            _$s14EXSimpleFileIO7EXFilesC4file4pathAC6EXFileCSS_tFTq,
+                            _$s14EXSimpleFileIO7EXFilesC4fromAC9Tightbeam0F8EndpointO_tcfC,
+                            _$s14EXSimpleFileIO7EXFilesC4fromAC9Tightbeam0F8EndpointO_tcfCTj,
+                            _$s14EXSimpleFileIO7EXFilesC4fromAC9Tightbeam0F8EndpointO_tcfCTq,
+                            _$s14EXSimpleFileIO7EXFilesC4fromAC9Tightbeam0F8EndpointO_tcfc,
+                            _$s14EXSimpleFileIO7EXFilesC5start9exclaveIdySS_tKFTj,
+                            _$s14EXSimpleFileIO7EXFilesC5start9exclaveIdySS_tKFTq,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileC7getData4sizeSays5UInt8VGSgSi_tFTj,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileC7getData4sizeSays5UInt8VGSgSi_tFTq,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileC7getSizes6UInt32VSgyFTj,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileC7getSizes6UInt32VSgyFTq,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileC8saveData4data5countSiSays5UInt8VG_SitFTj,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileC8saveData4data5countSiSays5UInt8VG_SitFTq,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileCMa,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileCMm,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileCMn,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileCMo,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileCMu,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileCN,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileCfD,
+                            _$s14EXSimpleFileIO7EXFilesC6EXFileCfd,
+                            _$s14EXSimpleFileIO7EXFilesC6remove4pathySS_tFTj,
+                            _$s14EXSimpleFileIO7EXFilesC6remove4pathySS_tFTq,
+                            _$s14EXSimpleFileIO7EXFilesC9exclaveId11withSegmentACSgSS_12SharedMemory0H6AccessCtcfC,
+                            _$s14EXSimpleFileIO7EXFilesC9exclaveId11withSegmentACSgSS_12SharedMemory0H6AccessCtcfCTj,
+                            _$s14EXSimpleFileIO7EXFilesC9exclaveId11withSegmentACSgSS_12SharedMemory0H6AccessCtcfCTq,
+                            _$s14EXSimpleFileIO7EXFilesC9exclaveId11withSegmentACSgSS_12SharedMemory0H6AccessCtcfc,
+                            _$s14EXSimpleFileIO7EXFilesC9exclaveId7shMemIDACSgSS_s6UInt32VSgtcfC,
+                            _$s14EXSimpleFileIO7EXFilesC9exclaveId7shMemIDACSgSS_s6UInt32VSgtcfCTj,
+                            _$s14EXSimpleFileIO7EXFilesC9exclaveId7shMemIDACSgSS_s6UInt32VSgtcfCTq,
+                            _$s14EXSimpleFileIO7EXFilesC9exclaveId7shMemIDACSgSS_s6UInt32VSgtcfc,
+                            _$s14EXSimpleFileIO7EXFilesCMa,
+                            _$s14EXSimpleFileIO7EXFilesCMm,
+                            _$s14EXSimpleFileIO7EXFilesCMn,
+                            _$s14EXSimpleFileIO7EXFilesCMo,
+                            _$s14EXSimpleFileIO7EXFilesCMu,
+                            _$s14EXSimpleFileIO7EXFilesCN,
+                            _$s14EXSimpleFileIO7EXFilesCfD,
+                            _$s14EXSimpleFileIO7EXFilesCfd,
+                            _EXSimpleFileIOVersionNumber,
+                            _EXSimpleFileIOVersionString,
+                            _storage_exclave_endpoint ]
+...

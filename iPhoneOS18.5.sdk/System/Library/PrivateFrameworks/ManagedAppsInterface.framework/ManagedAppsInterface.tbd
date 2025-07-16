@@ -1,0 +1,19 @@
+--- !tapi-tbd-v3
+archs:                 [ armv7, armv7s, arm64, arm64e ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/ManagedAppsInterface.framework/ManagedAppsInterface
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ armv7, armv7s, arm64, arm64e ]
+    symbols:              [ _ManagedAppsInterfaceVersionNumber,
+                            _ManagedAppsInterfaceVersionString ]
+    objc-classes:         [ _TtC20ManagedAppsInterface24ManagedAppsCredentialRef,
+                            _TtC20ManagedAppsInterface24ManagedAppsReportedState,
+                            _TtC20ManagedAppsInterface27ManagedAppsReportedAppState,
+                            _TtC20ManagedAppsInterface28ManagedAppsReportedStateItem,
+                            _TtC20ManagedAppsInterface29ManagedAppsAppConfigRecordRef,
+                            _TtC20ManagedAppsInterface35ManagedAppsExtensionConfigRecordRef ]
+...
